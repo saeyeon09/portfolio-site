@@ -480,8 +480,9 @@ a.active {
     border: 10px solid rgba(200, 210, 200, 0.6);
     width: 360px;
     height: 360px;
-    top: 160px;
-    left: 450px;
+    top: -50px;
+    right: 300px;
+    z-index: 1;
 }
 
 .h {
@@ -1225,4 +1226,18 @@ fieldset {
     display: inline-block;
     margin-bottom: 1.2em;
     padding: 0.25em 1em 0.2em 1em;
+}
+
+@media (max-width:600px) {
+    .timeline-event {
+        width: 100%
+    }
+}
+
+@media (max-width:992px) {
+    .about-border {
+        top: 10px;
+        left: 0;
+        right: auto
+    }
 }
