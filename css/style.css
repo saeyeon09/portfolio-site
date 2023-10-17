@@ -353,7 +353,7 @@ a.active {
 
     .table-cell h1 {
         color: #fff;
-        padding-top: 170px;
+        padding-top: 130px;
     }
 
     .disply-table {
@@ -373,7 +373,7 @@ a.active {
     }
 
     .dia {
-        width: 300px;
+        width: 200px;
         margin: 230px 0 0 200px;
 
 
@@ -494,7 +494,7 @@ a.active {
 .h-1 {
     padding: 130px 0 10px;
     font-weight: 500;
-    color: #f8fdec;
+    color: #7A8C54;
     letter-spacing: 5%;
 }
 
