@@ -1,391 +1,715 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이새연 포트폴리오 사이트</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-    <!--noto sans-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Russo+One&display=swap"
-        rel="stylesheet">
-    <!--suit-->
-    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lugrasimo&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
+    <!--js파일-->
+    <script src="js/finger.js"></script>
+    <script src="js/slide.js"></script>
+    <!--파비콘-->
+    <link rel="icon" href="favicon.png" type="image/png" />
 
+    <!--미리보기 이미지 설정-->
+    <meta property="og:title" content="이새연 포트폴리오" />
+    <meta
+      property="og:description"
+      content="한눈에 보이는 직관적인 디자인을 만드는 웹디자이너 이새연입니다."
+    />
+    <meta
+      property="og:image"
+      content="https://saeyeon09.github.io/portfolio/og-image.png"
+    />
+    <meta property="og:url" content="https://saeyeon09.github.io/portfolio/" />
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/aos.css" rel="stylesheet">
-    <!-- main style -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu'>
-    <link rel="stylesheet" href="css/style.css">
+    <!--커서 모양 변경-->
+    <link rel="stylesheet" href="css/cursor.css" />
+  </head>
 
-    <link rel="shortcut icon" href="./img/favicon.ico.png" type="image/x-icon">
-</head>
-
-<body>
-
-    <!-- Preloader -->
-    <div id="preloader">
-        <div id="status">
-
-            <div class="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
-            </div>
-
-        </div>
-    </div>
-    <!-- ./Preloader -->
-
-    <!-- header -->
-    <header class="navbar-fixed-top">
-        <nav>
+  <body>
+    <div id="wrap" id="fullpage">
+      <div id="page" class="page1 section">
+        <div id="whitebox">
+          <div class="S_text">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#experience">experience</a></li>
-                <li><a href="#skills">skills</a></li>
+              <li>ABOUT ME</li>
+              <li>PROJECT</li>
+              <li>CONTACT</li>
             </ul>
-        </nav>
-    </header>
-    <!-- ./header -->
-
-    <!-- home -->
-    <div class="section" id="home" data-stellar-background-ratio="0.5">
-        <div class="dropfilter"></div>
-        <div class="container">
-            <div class="disply-table">
-                <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
-                    <h1>Web Designer</h1>
-                    <h2>이새연</h2>
-                    <div class="box">
-                        <p class="dia"><img src="img/cypress.png" alt=""></p>
-                        <h4>I'll be like a widely used cypress tree</h4>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <!--//.S_text-->
+          <div class="B_text"><p>PORTFOLIO</p></div>
+          <!--//.B_text-->
+          <div class="boxs">
+            <ol>
+              <li id="textOn">
+                <p id="by">by <br class="mobile-br" />lee sae yeon</p>
+              </li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          </div>
+          <!--//.boxs-->
         </div>
-    </div>
-    <!-- ./home -->
+        <!--//#whitebox-->
 
-    <!-- about -->
-    <div class="section" id="about">
-        <div class="container">
+        <!-- <div id="name">
+          <img src="./image/BY.png" alt="BY이미지" />
+          <img src="./image/LEESAEYEON.png" alt="이름이미지" />
+        </div> -->
+        <!--//name-->
 
-            <div class="col-md-6" data-aos="fade-up">
-
-                <h4>01</h4>
-                <h1 class="size-50">Know <br /> About me</h1>
-                <div class="h">
-                    <span>Name.</span> 이새연
-                    <br><span>Mobile.</span> 010. 5130. 9604
-                    <br><span>E-mail.</span> todus0901@gmail.com
-                </div>
-
-
-                <div class="h-1">My story</div>
-                <div class="h-2">
-
-                    <br>편백나무는 아시아 지역에 주로 분포하고 있는 상록수로,
-                    <br>천연기념물로 지정되어 있을 만큼 가치가 높으며
-                    <br>나무들 중 피톤치드를 가장 많이 발산하여
-                    <br>향균제품, 목재, 피부미용 등 여러 분야에 유용히 쓰이는 나무입니다.
-                </div>
-                <div class="h-3">
-                    <br>효능이 높아 일상에서 유용하게 쓰이는 편백나무처럼
-                    <br>웹디자인 분야에서 재능과 기술을 발산하여 유용하게 쓰이는,
-                    <br>디자이너가 되고싶습니다.
-                </div>
-            </div>
-            <div class="col-md-6 about-img-div">
-                <div class="about-border" data-aos="fade-right" data-aos-delay=".5"></div>
-                <img src="img/profile.jpg" width="400" class="img-responsive" alt="" align="right" data-aos="fade-right"
-                    data-aos-delay="0" />
-            </div>
+        <div id="finger1">
+          <img src="./image/finger1.png" alt="손이미지1" />
         </div>
-    </div>
-    <!-- ./about -->
+      </div>
+      <!--//.page1-->
 
-    <!-- projects -->
-    <div class="section" id="projects">
-        <div class="container">
-            <div class="col-md-12">
-                <h4>02</h4>
-                <h1 class="size-50">My <br /> Projects</h1>
-            </div>
-            <!-- main container -->
-            <div class="main-container portfolio-inner clearfix">
-                <!-- portfolio div -->
-                <div class="portfolio-div">
-                    <div class="portfolio">
-                        <!-- portfolio_filter -->
-                        <div class="categories-grid wow fadeInLeft">
-                            <nav class="categories">
-                                <ul class="portfolio_filter">
-                                    <li><a href="" class="active" data-filter="*">All</a></li>
-                                    <li><a href="" data-filter=".Tium">brand1</a></li>
-                                    <!-- <li><a href="" data-filter=".Philos">brand2</a></li> -->
-                                    <li><a href="" data-filter=".graphics">Graphics</a></li>
-
-                                </ul>
-                            </nav>
-                        </div>
-                        <!-- portfolio_filter -->
-
-                        <!-- portfolio_container -->
-                        <div class="no-padding portfolio_container clearfix" data-aos="fade-up">
-                            <!-- single work -->
-                            <div class="col-md-12 Tium">
-                                <div class="col-md-4 col-sm-6  fashion logo">
-                                    <div class="portfolio_item"> <img src="img/brand.jpg" alt="image"
-                                            class="img-responsive" />
-
-                                    </div>
-                                </div>
-                                <!-- end single work -->
-
-                                <!-- single work -->
-                                <div class="col-md-4 col-sm-6 ads graphics">
-                                    <div class="portfolio_item">
-                                        <div class="portfolio_item">
-                                            <div class="portfolio-border clearfix">
-                                                <div class="item_info">
-                                                    <h3>brand1</h3>
-                                                    <p>cafe</p>
-                                                    <!--a태그의 #대신 브랜드1 주소 넣어주세요-->
-                                                    <div class="project_btn_box">
-                                                        <a href="https://saeyeon09.github.io/kaapi/" class="project_btn"
-                                                            target="_blank">Web site</a>
-                                                        <a href="https://saeyeon09.github.io/kaapi_bi/"
-                                                            class="project_btn" target="_blank">BI Guide</a><br>
-                                                        <a href="https://saeyeon09.github.io/kaapi-ebook/"
-                                                            class="project_btn" target="_blank">BX E-book</a>
-                                                        <a href="https://saeyeon09.github.io/kaapi_webguide/"
-                                                            class="project_btn" target="_blank">Web Guide</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- end single work -->
-                            </div>
-
-                            <!-- <div class="col-md-12 Philos">
-                                <div class="col-md-4 col-sm-6 photography">
-                                    <div class="portfolio_item"> <img src="img/portfolio/03.jpg" alt="image"
-                                            class="img-responsive" />
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 fashion ads">
-                                    <div class="portfolio_item">
-                                        <div class="portfolio_item">
-                                            <div class="portfolio-border clearfix">
-                                                <div class="item_info">
-                                                    <h3>brand2</h3>
-                                                    <p>brand2 분야</p>
-                                                    <p><a href="#"
-                                                            target="_blank">http://dothome.co.kr</a>
-                                                    </p>
-                                                    <div class="project_btn_box">
-                                                        <a href="#" class="project_btn" target="_blank">BI&amp;BX</a>
-                                                        <a href="#" class="project_btn" target="_blank">Web</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-
-                        </div>
-                        <!-- end portfolio_container -->
-                    </div>
-                    <!-- portfolio -->
-                </div>
-                <!-- end portfolio div -->
-            </div>
-            <!-- end main container -->
+      <div id="about" class="page2 section" style="background: #9dabb6">
+        <header id="nav">
+          <ul>
+            <li id="whitetext"><a href="#about">ABOUT ME</a></li>
+            <li id="whitetext"><a href="#project">PROJECT</a></li>
+            <li id="whitetext"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </header>
+        <!--//header-->
+        <div id="Introduction">
+          <div>
+            <img src="./image/profile.png" alt="내프로필이미지" />
+          </div>
+          <div>
+            <p>
+              한눈에 보이는 직관적인 디자인을 만드는 <br />
+              웹디자이너를 꿈꾸는 이새연입니다
+            </p>
+            <img src="./image/line.png" alt="물결밑줄" />
+          </div>
         </div>
-    </div>
-    <!-- ./projects -->
 
-    <!-- experience  -->
-    <div class="section" id="experience">
-        <div class="container">
-            <div class="col-md-4">
-                <h4>03</h4>
-                <h1 class="size-50">My <br /> Experience</h1>
-                <div class="h-50"></div>
-            </div>
-            <div class="col-md-8">
-                <ul class="timeline">
-                    <li class="timeline-event" data-aos="fade-up">
-                        <label class="timeline-event-icon1"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail1">2021. 02</p>
-                            <h3>마산대학교 사회복지과 졸업</h3>
-                        </div>
-                    </li>
-                    <li class="timeline-event" data-aos="fade-up">
-                        <label class="timeline-event-icon1"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail1">2021. 07 ~ 2022. 12</p>
-                            <h3>천마재활원 근무</h3>
-                        </div>
-                    </li>
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">2023. 12</p>
-                            <h3>웹디자인 기능사</h3>
-                        </div>
-                    </li>
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">2021. 03</p>
-                            <h3>사회복지사 2급</h3>
-                        </div>
-                    </li>
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">2017. 12</p>
-                            <h3>컴퓨터활용능력 2급</h3>
-                        </div>
-                    </li>
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">2018. 07</p>
-                            <h3>워드프로세서 1급</h3>
-                        </div>
-                    </li>
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">2018. 07</p>
-                            <h3>정보기기운용기능사</h3>
-                        </div>
-                    </li>
-
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">2022. 03</p>
-                            <h3>운전면허증 2종 보통</h3>
-                        </div>
-                    </li>
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">2023. 04</p>
-                            <h3>GTQ 1급</h3>
-                        </div>
-                    </li>
-                    <li class="timeline-event" data-aos="fade-up" data-aos-delay=".4">
-                        <label class="timeline-event-icon"></label>
-                        <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">2023. 05 ~ 09</p>
-                            <h3>나래디자인학원 디지털퍼블리싱 수료</h3>
-                        </div>
-                    </li>
+        <div id="Profile">
+          <div id="Profile_inner">
+            <h2>Profile</h2>
+            <div id="aboutme" class="textbox">
+              <div id="P_text">
+                <ul>
+                  <li><h3 class="subtext">ABOUT ME</h3></li>
+                  <li>
+                    <ul>
+                      <li>
+                        <p class="graytext">Name.</p>
+                        <p class="graytext">Birth.</p>
+                        <p class="graytext">Phone.</p>
+                        <p class="graytext">Email.</p>
+                      </li>
+                      <li>
+                        <p>이새연</p>
+                        <p>2000. 09. 01</p>
+                        <p>010. 5130. 9604</p>
+                        <p id="by">
+                          yeon20901<br class="mobile-br" />@naver.com
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
+              </div>
+              <!--//P_text-->
             </div>
-        </div>
-    </div>
-    <!-- ./experience -->
-    <!-- skills -->
-    <div class="section" id="skills">
-        <div class="container">
-            <div class="col-md-" data-aos="fade-up">
-                <h4>04</h4>
-                <h1 class="size-50">Skills</h1>
-                <div class="h-50"></div>
-                <div class="skill-box">
+            <!--aboutme-->
 
-                    <div class="skills-circle">
-
-                        <ul>
-                            <li data-percent="90"><span class="text">Ps</span><span
-                                    class="bar-circle-right"></span><span class="bar-circle-left"></span><span
-                                    class="bar-circle-cover"></span><b></b></li>
-                            <li data-percent="70"><span class="text">Ai</span><span
-                                    class="bar-circle-right"></span><span class="bar-circle-left"></span><span
-                                    class="bar-circle-cover"></span><b></b></li>
-                            <li data-percent="80"><span class="text">Web</span><span
-                                    class="bar-circle-right"></span><span class="bar-circle-left"></span><span
-                                    class="bar-circle-cover"></span><b></b></li>
-                            <li data-percent="60"><span class="text">ID</span><span
-                                    class="bar-circle-right"></span><span class="bar-circle-left"></span><span
-                                    class="bar-circle-cover"></span><b></b></li><br>
-                            <li data-percent="70"><span class="text">Pr</span><span
-                                    class="bar-circle-right"></span><span class="bar-circle-left"></span><span
-                                    class="bar-circle-cover"></span><b></b></li>
-                            <li data-percent="70"><span class="text">Ae</span><span
-                                    class="bar-circle-right"></span><span class="bar-circle-left"></span><span
-                                    class="bar-circle-cover"></span><b></b></li>
-                            <li data-percent="70"><span class="text">XD</span><span
-                                    class="bar-circle-right"></span><span class="bar-circle-left"></span><span
-                                    class="bar-circle-cover"></span><b></b></li>
-
-                        </ul>
-                    </div>
-                </div>
+            <div id="career" class="textbox">
+              <div id="P_text">
+                <ul>
+                  <li><h3 class="subtext">MY CAREER</h3></li>
+                  <li>
+                    <ul>
+                      <li>
+                        <p><span>-</span> 천마재활원 1년 6개월 근무</p>
+                      </li>
+                      <li>
+                        <p>
+                          <span>-</span> 나래디자인학원 디지털퍼블리싱<br />
+                          &nbsp;&nbsp;5개월 과정 수료
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!--//P_text-->
             </div>
+            <!--//career-->
 
-        </div>
-    </div>
-
-    <!-- partial -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-    <script src="js/skill_script.js"></script>
-
-    <!-- ./skil -->
-
-
-    <!-- contact -->
-    <div class="section" id="contact">
-        <div class="container">
-            <div class="col-md-12">
-                <p>© 2023 Created by Lee Saeyeon. All Rights Reserved.</p>
+            <div id="license" class="textbox">
+              <ul>
+                <li><h3 class="subtext">MY LICENSE</h3></li>
+                <li>
+                  <ul>
+                    <li>• &nbsp;웹디자인 기능사</li>
+                    <li>•&nbsp; GTQ 포토샵 1급</li>
+                    <li>• &nbsp;컴퓨터활용능력 2급</li>
+                    <li>• &nbsp;워드프로세서 1급</li>
+                  </ul>
+                  <ul>
+                    <li>• &nbsp;운전면허증 2종 보통</li>
+                    <li>•&nbsp; 사회복지사 2급</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
+            <!--//license-->
+
+            <div id="education" class="textbox">
+              <div id="P_text">
+                <ul>
+                  <li><h3 class="subtext">MY EDUCATION</h3></li>
+                  <li>
+                    <ul>
+                      <li>
+                        <p><span>-</span> 마산 한일여자고등학교 졸업</p>
+                      </li>
+                      <li>
+                        <p><span>-</span> 마산대학교 사회복지과 졸업</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!--//P_text-->
+            </div>
+            <!--//education-->
+
+            <div id="skill" class="textbox">
+              <h3 class="subtext">MY SKILL</h3>
+              <div>
+                <img src="./image/skill1.png" alt="html이미지" />
+                <img src="./image/skill2.png" alt="css이미지" />
+                <img src="./image/skill3.png" alt="js이미지" />
+                <img src="./image/skill4.png" alt="figma이미지" />
+                <img src="./image/skill5.png" alt="포토샵이미지" />
+                <img src="./image/skill6.png" alt="일러스트레이터이미지" />
+                <img src="./image/skill7.png" alt="xd이미지" />
+              </div>
+            </div>
+            <!--//skill-->
+          </div>
+          <!--//Profile_inner-->
         </div>
+        <!--//Profile-->
+      </div>
+      <!--//.page2-->
+      <div id="project" class="page3 section" style="background: #e2dbe2">
+        <header id="nav">
+          <ul>
+            <li id="whitetext"><a href="#about">ABOUT ME</a></li>
+            <li id="whitetext"><a href="#project">PROJECT</a></li>
+            <li id="whitetext"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </header>
+        <!--//header-->
+        <div id="page3_inner">
+          <h2>Web Project</h2>
+          <div id="Project" class="slider">
+            <ul class="Project_content content1 slide active">
+              <li id="content_image">
+                <img src="./image/amorf.png" alt="아모르프 목업 이미지" />
+              </li>
+              <li id="content_text">
+                <h5>무형에 가까운 디자인을 입다</h5>
+                <h2>Amorf</h2>
+                <ul class="content_text_t">
+                  <li>
+                    <p class="graytext">제작기간</p>
+                    <p class="graytext">기여도</p>
+                    <p class="graytext">TOOL</p>
+                    <p class="graytext">TYPE</p>
+                    <p class="graytext">PAGE</p>
+                  </li>
+                  <li>
+                    <p>26. 03. 30 ~ 26. 04. 20(3주)</p>
+                    <p>개인 100%</p>
+                    <p>Figma / VS code / Github</p>
+                    <p>반응형 웹페이지</p>
+                    <p>메인페이지 및 메뉴</p>
+                  </li>
+                </ul>
+                <p id="font_regular">
+                  정형화되지 않은 비정형의 아름다움(Amorphous)을 추구하며,
+                  절제된 미니멀리즘을 드러내는 쇼핑몰 브랜드입니다. 여백의 미를
+                  살린 레이아웃과 모노톤의 컬러 팔레트를 활용하여 제품의 질감을
+                  강조하고, 직관적인 슬라이드 인터페이스로 세련된 사용자
+                  경험(UX)을 구현했습니다.
+                </p>
+                <ul class="links">
+                  <li>
+                    <a href="https://saeyeon09.github.io/amorf/" target="_blank"
+                      >website</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="Project_content content2 slide">
+              <li id="content_image">
+                <img src="./image/kaapi.png" alt="카아피 디바이스 이미지" />
+              </li>
+              <li id="content_text">
+                <h5>여유있는 한 잔을 즐길 수 있는 곳</h5>
+                <h2>KA'API</h2>
+
+                <ul class="content_text_t">
+                  <li>
+                    <p class="graytext">제작기간</p>
+                    <p class="graytext">기여도</p>
+                    <p class="graytext">TOOL</p>
+                    <p class="graytext">TYPE</p>
+                    <p class="graytext">PAGE</p>
+                  </li>
+                  <li>
+                    <p>23. 08. 04 ~ 24. 10. 21 (3개월)</p>
+                    <p>개인 100%</p>
+                    <p>XD / Photoshop / Illustrator / VS code / Github</p>
+                    <p>고정형 웹사이트</p>
+                    <p>
+                      메인페이지, 서브페이지1(about us),
+                      서브페이지2(음료/푸드/MD상품), 서브페이지3(이벤트/고객의
+                      소리), 서브페이지4(경쟁력/가맹절차) &nbsp;[총 9페이지]
+                    </p>
+                  </li>
+                </ul>
+                <p id="font_regular">
+                  KA'API는 '가는 잎을 먹는 이(ka'apiûara)'라는 카피바라의
+                  원어에서 따온 브랜드명으로, 친환경적인 카페를 지향하는
+                  브랜드의 의지를 나타냅니다. 카아피는 누구나 부담없는 가격으로
+                  여유로운 휴식 같은 한때를 보낼 수 있는 공간입니다. 브랜드색을
+                  이용한 깔끔한 디자인으로 카아피만의 활력과 여유가 느껴지게끔
+                  디자인하였습니다.
+                </p>
+                <ul class="links">
+                  <li>
+                    <a
+                      href="https://drive.google.com/file/d/1Jwm_MmWWL1-PW8c6oQDqPPR0-l8lBpG2/view?usp=drive_link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >가이드</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://saeyeon09.github.io/kaapi/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >website</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--//#content_text-->
+            </ul>
+            <!--//#Project_content-->
+
+            <ul class="Project_content content3 slide">
+              <li id="content_image">
+                <img src="./image/shinhan.png" alt="신한은행 디바이스 이미지" />
+              </li>
+              <li id="content_text">
+                <h5>미래를 함께하는 따뜻한 금융</h5>
+                <h2>신한은행</h2>
+
+                <ul class="content_text_t">
+                  <li>
+                    <p class="graytext">제작기간</p>
+                    <p class="graytext">기여도</p>
+                    <p class="graytext">TOOL</p>
+                    <p class="graytext">TYPE</p>
+                    <p class="graytext">PAGE</p>
+                  </li>
+                  <li>
+                    <p>25. 01. 12 ~ 25. 01. 18 (7일)</p>
+                    <p>개인 100%</p>
+                    <p>Photoshop / VS code / Github</p>
+                    <p>웹페이지 리디자인</p>
+                    <p>메인페이지</p>
+                  </li>
+                </ul>
+                <p id="font_regular" class="font_regular_p">
+                  신한은행은 상품, 서비스, 자금 등에서 언제나 새로운 환경에 맞는
+                  새로운 방식을 추구합니다. 고객과 신한 그리고 사회의 상생을
+                  만들어 가는 것을 지향점으로 하는 은행입니다. 더 쉽고 한눈에
+                  알아보기 쉽게끔 웹페이지를 리디자인하였습니다.
+                </p>
+                <ul class="links">
+                  <li>
+                    <a href="https://www.shinhan.com/index.jsp" target="_blank"
+                      >기존 website</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://saeyeon09.github.io/Shinhan_Bank/"
+                      target="_blank"
+                      >리디자인 website</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--//#content_text-->
+            </ul>
+            <!--//#Project_content-->
+          </div>
+          <!--//#project-->
+          <button class="nav-btn prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="#e2dbe2"
+              viewBox="0 0 25 24"
+            >
+              <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+            </svg>
+          </button>
+
+          <button class="nav-btn next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="#e2dbe2"
+              viewBox="0 0 23 24"
+            >
+              <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+            </svg>
+          </button>
+        </div>
+        <!--//#page3_inner-->
+      </div>
+      <!--//#page-->
+      <!--//.page3-->
+      <div id="project" class="page4 section" style="background: #e2dbe2">
+        <header id="nav">
+          <ul>
+            <li id="whitetext"><a href="#about">ABOUT ME</a></li>
+            <li id="whitetext"><a href="#project">PROJECT</a></li>
+            <li id="whitetext"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </header>
+        <!--//header-->
+        <div id="page4_inner">
+          <h2>App & Web Project</h2>
+
+          <div id="Project">
+            <ul class="Project_content">
+              <li id="content_image">
+                <img src="./image/hada.png" alt="하다앱 디바이스 이미지" />
+              </li>
+              <li id="content_text">
+                <h5>나만의 일상 기록 다이어리앱</h5>
+                <h2>HADA</h2>
+
+                <ul class="content_text_t">
+                  <li>
+                    <p class="graytext">제작기간</p>
+                    <p class="graytext">기여도</p>
+                    <p class="graytext">TOOL</p>
+                    <p class="graytext">TYPE</p>
+                    <p class="graytext">PAGE</p>
+                  </li>
+                  <li>
+                    <p>24. 09. 13 ~ 24. 11. 20 (2개월)</p>
+                    <p>개인 100%</p>
+                    <p>Figma / Photoshop / Illustrator / VS code / Github</p>
+                    <p>모바일 앱(반응형 웹앱)</p>
+                    <p>
+                      로딩, 로그인/회원가입/비밀번호찾기, 가입환영, 메인페이지
+                      3p, 서브페이지 3p, 서브메뉴 페이지 5p &nbsp; [총 18페이지]
+                    </p>
+                  </li>
+                </ul>
+                <p id="font_regular">
+                  HADA는 ~을 하다에서 가져온 용어로, 나의 하루를 기록하고
+                  주변인과 일상을 공유할 수 있는 앱입니다. 내가 느꼈던 그날의
+                  감정을 이모티콘과 함께 짧은글로 남겨 보관하고 다시 되돌아볼 수
+                  있습니다. I와 E 버튼으로 개인적인 공간과 좀 더 개방적인 공간을
+                  나누어 사용자로 하여금 흥미와 효율성을 느낄 수있도록
+                  디자인하였습니다.
+                </p>
+                <ul class="links">
+                  <li>
+                    <a
+                      href="https://www.figma.com/proto/3Yo1fbAKVuCGy7BDia12Th/%ED%95%98%EB%8B%A4-%EA%B8%B0%ED%9A%8D%EC%84%9C?page-id=669%3A225&node-id=671-226&p=f&viewport=657%2C-1229%2C0.17&t=jZDmRrgxGn6RBYGD-1&scaling=min-zoom&content-scaling=fixed"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >기획서</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.figma.com/proto/3Yo1fbAKVuCGy7BDia12Th/%ED%95%98%EB%8B%A4-%EA%B8%B0%ED%9A%8D%EC%84%9C?page-id=31%3A60&node-id=171-449&p=f&viewport=571%2C533%2C0.09&t=zu0eMa4UOq1a9Jrd-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=45%3A61"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >prototype</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://saeyeon09.github.io/HADA/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >website</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--//#content_text-->
+            </ul>
+            <!--//#Project_content-->
+          </div>
+          <!--//#project-->
+        </div>
+        <!--//#page4_inner-->
+      </div>
+      <!--//.page4-->
+      <div id="project" class="page5 section" style="background: #e2dbe2">
+        <header id="nav">
+          <ul>
+            <li id="whitetext"><a href="#about">ABOUT ME</a></li>
+            <li id="whitetext"><a href="#project">PROJECT</a></li>
+            <li id="whitetext"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </header>
+        <!--//header-->
+        <div id="page5_inner">
+          <h2>Detail Page</h2>
+          <div id="Project">
+            <ul class="Project_content">
+              <li id="content_image">
+                <img src="./image/detail2.jpg" alt="스틸로 상세페이지 이미지" />
+              </li>
+              <li id="content_text">
+                <h5>정교한 설계와 감각적인 디자인의 조화</h5>
+                <h2>Steello</h2>
+
+                <ul class="content_text_t">
+                  <li>
+                    <p class="graytext">제작기간</p>
+                    <p class="graytext">기여도</p>
+                    <p class="graytext">TOOL</p>
+                    <p class="graytext">TYPE</p>
+                    <p class="graytext">PAGE</p>
+                  </li>
+                  <li>
+                    <p>25. 06. 10 ~ 25. 08. 20 (2개월)</p>
+                    <p>개인 100%</p>
+                    <p>Figma / Photoshop</p>
+                    <p>브랜드 상세페이지</p>
+                    <p>제품 장점 소개 및 컬러,사이즈 등 상세 내용 표기</p>
+                  </li>
+                </ul>
+                <p id="font_regular">
+                  전기포트기 브랜드 상세페이지를 새롭게 구성하여 카피와 기획안을
+                  새로이 작성하였습니다. 기존에 정보만 나열했던 상세페이지에서
+                  벗어나 도입부 질문-필요성 제기-해결책 제시 순으로 내용의
+                  흐름을 자연스럽게 이끌며 소비자의 이해 중심으로
+                  작성하였습니다. 상세페이지 안에 설명과 제품의 실사용 gif를
+                  같이 보여주어 소비자가 눈으로 바로 이해할 수 있게 하고 실제로
+                  사용하였을 때의 모습을 상상할 수 있게끔 제작하였습니다.
+                </p>
+                <ul class="links">
+                  <li>
+                    <a
+                      href="https://smartstore.naver.com/hansung_commerce/products/7533635781?NaPm=ct%3Dmlte23p4%7Cci%3D17a1383c51b7ac067451a9a2b710ac3e99152bad%7Ctr%3Dslct%7Csn%3D2021128%7Chk%3D23be3d5af9540b1d28bcdc71da8f16f611242d54&nl-query=%ED%82%A4%EC%B9%9C%EC%95%84%ED%8A%B8+%EC%A0%84%EA%B8%B0%ED%8F%AC%ED%8A%B8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >기존 상세페이지</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.figma.com/proto/HX3AJC9oylk7jfr4uaUUSb/%EC%A0%9C%EB%AA%A9-%EC%97%86%EC%9D%8C?page-id=0%3A1&node-id=1-28&viewport=217%2C365%2C0.12&t=qXUWCLSCUFOHhlFU-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A28"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >리뉴얼 상세페이지</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!--//#content_text-->
+            </ul>
+            <!--//#Project_content-->
+          </div>
+          <!--//#project-->
+        </div>
+        <!--//#page4_inner-->
+      </div>
+      <!--//.page5-->
+      <div id="project" class="page6 section" style="background: #e2dbe2">
+        <header id="nav">
+          <ul>
+            <li id="whitetext"><a href="#about">ABOUT ME</a></li>
+            <li id="whitetext"><a href="#project">PROJECT</a></li>
+            <li id="whitetext"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </header>
+        <!--//header-->
+        <div id="page6_inner">
+          <h2>Poster & Design</h2>
+          <div id="poster_Wrap">
+            <div id="poster">
+              <img class="banners" src="./image/ad1.jpg" alt="선크림광고배너" />
+              <img
+                class="banners"
+                src="./image/ad2.jpg"
+                alt="당근주스광고배너"
+              />
+              <img
+                class="banners"
+                src="./image/event_tumblr.jpg"
+                alt="텀블러미니배너"
+              />
+              <img class="posters" src="./image/poster1.jpg" alt="시즌포스터" />
+              <img
+                class="banners"
+                src="./image/event_season.jpg"
+                alt="시즌미니배너"
+              />
+              <img
+                class="posters"
+                src="./image/poster2.jpg"
+                alt="신메뉴포스터"
+              />
+              <img
+                class="banners"
+                src="./image/event_kakao.jpg"
+                alt="카카오할인미니배너"
+              />
+              <img
+                class="posters"
+                src="./image/poster3.jpg"
+                alt="시그니처포스터"
+              />
+              <img
+                class="banners"
+                src="./image/event_time.jpg"
+                alt="타임어택미니배너"
+              />
+              <img
+                class="posters"
+                src="./image/poster4.jpg"
+                alt="시그니처포스터2"
+              />
+              <img
+                class="banners"
+                src="./image/discount.jpg"
+                alt="연말할인쿠폰미니배너"
+              />
+
+              <img class="banners" src="./image/ad1.jpg" alt="선크림광고배너" />
+              <img
+                class="banners"
+                src="./image/ad2.jpg"
+                alt="당근주스광고배너"
+              />
+              <img
+                class="banners"
+                src="./image/event_tumblr.jpg"
+                alt="텀블러미니배너"
+              />
+              <img class="posters" src="./image/poster1.jpg" alt="시즌포스터" />
+            </div>
+            <!--//#poster-->
+          </div>
+          <!--//#poster_Wrap-->
+        </div>
+        <!--//#page6_inner-->
+      </div>
+      <!--//.page6-->
+      <div
+        id="contact"
+        class="section fp-auto-height"
+        style="background: #000000"
+      >
+        <header id="nav">
+          <ul>
+            <li id="whitetext"><a href="#about">ABOUT ME</a></li>
+            <li id="whitetext"><a href="#project">PROJECT</a></li>
+            <li id="whitetext"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </header>
+        <!--//header-->
+        <div class="contact_inner">
+          <div class="endtext">
+            <h4>
+              저의 포트폴리오를 봐주셔서 정말 감사합니다.
+              <br />
+              취업 관련 연락은 아래의 경로로 주시면 감사하겠습니다.
+            </h4>
+          </div>
+          <div class="info">
+            <div class="info_qr">
+              <img
+                class="code"
+                src="./image/kakao.jpg"
+                alt="오픈채팅큐알코드"
+              />
+            </div>
+            <!--//.info_qr-->
+            <div class="info_text">
+              <ul>
+                <li
+                  style="font-size: 1.2rem; color: #9dabb6; margin-bottom: 10px"
+                >
+                  Contact Me
+                </li>
+                <li style="font-size: 2rem; font-weight: 600">
+                  010. 5130. 9604
+                </li>
+                <li style="font-size: 1.5rem">yeon20901@naver.com</li>
+              </ul>
+            </div>
+            <!--//.info_text-->
+          </div>
+          <!--//.info-->
+        </div>
+        <!--//contact_inner-->
+      </div>
     </div>
+  </body>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.min.js"></script>
+  <script>
+    new fullpage('#fullpage', {
+      autoScrolling: true,
+      scrollingSpeed: 900, // 스크롤 속도 조절 (값이 높을수록 느긋해짐)
+      easingcss3: 'cubic-bezier(0.77, 0, 0.175, 1)', // 부드러운 감속 애니메이션
+      navigation: true,
+    });
+  </script>
 
-
-    <!-- ./contact -->
-
-
-    <!-- jQuery -->
-    <script src=" js/jquery.js">
-    </script>
-    <!--  plugins  -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-
-    <!--  main script  -->
-    <script src="js/custom.js"></script>
-</body>
-
+  <script>
+    /* 마우스 좌표 업데이트 */
+    document.addEventListener('mousemove', (e) => {
+      document.documentElement.style.setProperty('--mouse-x', `${e.pageX}px`);
+      document.documentElement.style.setProperty('--mouse-y', `${e.pageY}px`);
+    });
+  </script>
 </html>
